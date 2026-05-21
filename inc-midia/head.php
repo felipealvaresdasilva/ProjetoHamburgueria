@@ -6,4 +6,5 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Projeto Hamburgueria</title>
-    <link> rel="icon" href="assets/hamburguer.ico">
+    <link rel="icon" href="assets/hamburger.ico">
+    <link rel="stylesheet" href="css/styles.css">
