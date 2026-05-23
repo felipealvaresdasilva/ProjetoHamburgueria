@@ -1,0 +1,57 @@
+.topo {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    height: auto;
+    position: fixed;
+    top: 0;
+
+    .topo-menu {
+        width: 80%;
+        margin: 0 auto;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        ul {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                font-size: 1.6rem;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: #facc15;
+                    }
+                }
+
+                .logo-topo {
+                    a {
+                        gap: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 20px;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

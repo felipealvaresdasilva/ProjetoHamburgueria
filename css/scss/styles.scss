@@ -1,9 +1,3 @@
-body {
-    background-image: url("../assets/textura-fundo.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 @keyframes dots {
     0% {
         background-position:
@@ -18,14 +12,13 @@ body {
     }
 }
 
-
 .banner {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 20vh auto 0 auto;
 
     .esquerda-banner {
         width: 50%;

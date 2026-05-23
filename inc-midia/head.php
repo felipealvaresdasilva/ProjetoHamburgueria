@@ -8,3 +8,5 @@
     <title>Projeto Hamburgueria</title>
     <link rel="icon" href="assets/hamburger.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/topo.css">
+    <link rel="stylesheet" href="css/normalize.css">
