@@ -6,13 +6,33 @@
     background-position: 8px 0, 12px 4px;
   }
 }
+@keyframes cimaBaixo {
+  0% {
+    transform: translateY(-20px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
 .banner {
+  background-image: url("../assets/textura-fundo.webp");
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  margin: 20vh auto 0 auto;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20vh 0 10vh 0;
 }
 .banner .esquerda-banner {
   width: 50%;
@@ -28,8 +48,9 @@
   color: #fff;
 }
 .banner .esquerda-banner p {
+  text-align: center;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 30px;
 }
 .banner .esquerda-banner .botao {
@@ -94,6 +115,12 @@
 .banner .direita-banner {
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .direita-banner img {
+  animation: cimaBaixo infinite 4s linear;
 }
 
 .pesquisa {
@@ -127,4 +154,36 @@
   color: #757575;
   border: none;
   padding: 10px;
+}
+
+.produtos {
+  background-color: #121212;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 30px;
+}
+.produtos .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+.produtos .container .card {
+  background-color: #1e1e1e;
+  padding: 10px;
+  width: 250px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.produtos .container .card img {
+  width: 100%;
 }

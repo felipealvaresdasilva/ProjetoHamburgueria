@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("../assets/textura-fundo.webp");
+    background-color: #121212;
     background-size: cover;
     background-repeat: no-repeat;
 }
