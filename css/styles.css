@@ -27,33 +27,41 @@
   background-image: url("../assets/textura-fundo.webp");
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   width: 100%;
   padding: 20vh 0 10vh 0;
 }
-.banner .esquerda-banner {
-  width: 50%;
+.banner .container-banner {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.banner .container-banner .esquerda-banner {
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
 }
-.banner .esquerda-banner h1 {
+.banner .container-banner .esquerda-banner h1 {
   color: #fff;
+  text-align: center;
 }
-.banner .esquerda-banner h2 {
+.banner .container-banner .esquerda-banner h2 {
   color: #fff;
+  text-align: center;
 }
-.banner .esquerda-banner p {
+.banner .container-banner .esquerda-banner p {
   text-align: center;
   color: #fff;
   font-size: 1.2rem;
   line-height: 30px;
+  font-family: "Domine", sans-serif;
 }
-.banner .esquerda-banner .botao {
+.banner .container-banner .esquerda-banner .botao {
   margin-top: 30px;
   font-size: 1rem;
   cursor: pointer;
@@ -71,24 +79,24 @@
   text-align: center;
   box-shadow: 0.5px 0.5px 0 0 #292524, 1px 1px 0 0 #292524, 1.5px 1.5px 0 0 #292524, 2px 2px 0 0 #292524, 2.5px 2.5px 0 0 #292524, 3px 3px 0 0 #292524, 0 0 0 2px #fafaf9, 0.5px 0.5px 0 2px #fafaf9, 1px 1px 0 2px #fafaf9, 1.5px 1.5px 0 2px #fafaf9, 2px 2px 0 2px #fafaf9, 2.5px 2.5px 0 2px #fafaf9, 3px 3px 0 2px #fafaf9, 3.5px 3.5px 0 2px #fafaf9, 4px 4px 0 2px #fafaf9;
 }
-.banner .esquerda-banner .botao:hover {
+.banner .container-banner .esquerda-banner .botao:hover {
   transform: translate(0, 0);
   box-shadow: 0 0 0 2px #fafaf9;
 }
-.banner .esquerda-banner .botao:active, .banner .esquerda-banner .botao:focus-visible {
+.banner .container-banner .esquerda-banner .botao:active, .banner .container-banner .esquerda-banner .botao:focus-visible {
   outline-color: #facc15;
 }
-.banner .esquerda-banner .botao:focus-visible {
+.banner .container-banner .esquerda-banner .botao:focus-visible {
   outline-style: dashed;
 }
-.banner .esquerda-banner .botao > div {
+.banner .container-banner .esquerda-banner .botao > div {
   position: relative;
   pointer-events: none;
   background-color: #facc15;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 9999px;
 }
-.banner .esquerda-banner .botao > div::before {
+.banner .container-banner .esquerda-banner .botao > div::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -100,7 +108,7 @@
   mix-blend-mode: hard-light;
   animation: dots 0.5s infinite linear;
 }
-.banner .esquerda-banner .botao > div > span {
+.banner .container-banner .esquerda-banner .botao > div > span {
   position: relative;
   display: flex;
   align-items: center;
@@ -109,17 +117,17 @@
   gap: 0.25rem;
   filter: drop-shadow(0 -1px 0 rgba(255, 255, 255, 0.25));
 }
-.banner .esquerda-banner .botao > div > span:active {
+.banner .container-banner .esquerda-banner .botao > div > span:active {
   transform: translateY(2px);
 }
-.banner .direita-banner {
-  width: 50%;
+.banner .container-banner .direita-banner {
+  width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.banner .direita-banner img {
+.banner .container-banner .direita-banner img {
   animation: cimaBaixo infinite 4s linear;
 }
 
