@@ -266,3 +266,63 @@
         }
     }
 }
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 50px 0;
+    background-color: #1e1e1e;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    .slide-controles {
+        position: absolute;
+        display: flex;
+        width: 98vw;
+        justify-content: space-between;
+        z-index: 9;
+        top: 50%;
+        left: 5px;
+        
+        .controle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+    .slide-review {
+        display: flex;
+        transition: transform .5s ease;
+
+        .slide-page {
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .cliente {
+                width: 45%;
+                height: 200px;
+                border: 2px solid #fff;
+                border-radius: 20px;
+                padding: 20px;
+                color: #fff;
+            }
+        }
+    }
+}
