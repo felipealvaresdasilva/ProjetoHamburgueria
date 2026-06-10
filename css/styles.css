@@ -261,4 +261,22 @@
   border-radius: 20px;
   padding: 20px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+.reviews .slide-review .slide-page .cliente .avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #facc15;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
