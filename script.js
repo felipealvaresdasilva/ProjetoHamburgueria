@@ -1,5 +1,4 @@
 //Slide reviews
-
 const totalPages = document.querySelectorAll('.slide-page').length;
 let currentPage = 0;
 function updateSlide() {
@@ -35,13 +34,8 @@ function filtrarProdutos() {
 
     cards.forEach((card) => {
 
-        const nomeProduto = card
-            .querySelector("h4")
-            .textContent
-            .toLowerCase();
-
+        const nomeProduto = card.querySelector("h4").textContent.toLowerCase();
         const categoriaProduto = card.dataset.categoria;
-
         const correspondeNome = nomeProduto.includes(texto);
 
         const correspondeCategoria =
