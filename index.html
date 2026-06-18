@@ -32,7 +32,7 @@
                         </div>
                     </li>
                     <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -71,12 +71,11 @@
                 <div class="bloco-form">
                     <label for="categoria">Selecione uma categoria!</label>
                     <select name="categoria" id="categoria">
-                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="">Selecione uma opção</option>
                         <option value="carne">Carne</option>
-                        <option value="frango">Frango</option>
                         <option value="vegano">Vegano</option>
-                        <option value="acompanhamentos">Acompanhamentos</option>
-                        <option value="bebida">Bebidas</option>
+                        <option value="acompanhamento">Acompanhamentos</option>
+                        <option value="bebidas">Bebidas</option>
                         <option value="sobremesa">Sobremesas</option>
                     </select>
                 </div>
@@ -88,28 +87,28 @@
             <h3>Lanches</h3>
 
             <div class="container lanches">
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="carne" class="card">
                     <img src="assets/burguers/burger1.png" alt="lanche">
                     <h4>Grande Burguer</h4>
                     <p class="descricao">Hambúrguer artesanal, queijo derretido, alface, tomate, cebola roxa e molho
                         especial no pão brioche.</p>
                     <span class="preco">R$ 24,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="carne" class="card">
                     <img src="assets/burguers/burger2.png" alt="lanche">
                     <h4>Duplo Burguer</h4>
                     <p class="descricao">Dois hambúrgueres suculentos, queijo cheddar em dobro, bacon crocante e molho
                         da casa.</p>
                     <span class="preco">R$ 29,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="vegano" class="card">
                     <img src="assets/burguers/burger3.png" alt="lanche">
                     <h4>Vegano Burguer</h4>
                     <p class="descricao">Hambúrguer vegetal, alface fresca, tomate, cebola roxa e molho vegano no pão
                         macio.</p>
                     <span class="preco">R$ 26,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="carne" class="card">
                     <img src="assets/burguers/burger4.png" alt="lanche">
                     <h4>Ovo Burguer</h4>
                     <p class="descricao">Hambúrguer artesanal, queijo derretido, ovo, bacon crocante e molho especial.
@@ -122,14 +121,15 @@
             <h3>Acompanhamentos</h3>
 
             <div class="container acompanhamentos">
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="acompanhamento" class="card">
                     <img src="assets/acomp/acomp2.png" alt="Acompanhamento">
                     <h4>Mega Fritas</h4>
                     <p class="descricao">Porção generosa de batatas fritas douradas, crocantes por fora e macias por
                         dentro.</p>
                     <span class="preco">R$ 14,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+
+                <div data-categoria="acompanhamento" class="card">
                     <img src="assets/acomp/acomp1.png" alt="Acompanhamento">
                     <h4>Mega Onion Rings</h4>
                     <p class="descricao">Anéis de cebola empanados e crocantes, perfeitos para compartilhar ou
@@ -141,26 +141,26 @@
             <h3>Bebidas</h3>
 
             <div class="container bebidas">
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="bebidas" class="card">
                     <img src="assets/bebidas/bebida1.png" alt="bebidas">
                     <h4>Sucos</h4>
                     <p class="descricao">Sucos preparados com frutas selecionadas, refrescantes e cheios de sabor.</p>
                     <span class="preco">R$ 8,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="bebidas" class="card">
                     <img src="assets/bebidas/bebida2.png" alt="bebidas">
                     <h4>Refrigerantes</h4>
                     <p class="descricao">Refrigerante gelado nas principais marcas e sabores.</p>
                     <span class="preco">R$ 6,00</span>
                 </div>
 
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="bebidas" class="card">
                     <img src="assets/bebidas/bebida3.png" alt="bebidas">
                     <h4>Cerveja</h4>
                     <p class="descricao">Cerveja sempre gelada para acompanhar seu lanche.</p>
                     <span class="preco">R$ 9,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="bebidas" class="card">
                     <img src="assets/bebidas/bebida4.png" alt="bebidas">
                     <h4>Água</h4>
                     <p class="descricao">Água mineral gelada com ou sem gás.</p>
@@ -171,21 +171,21 @@
             <h3>Sobremesas</h3>
 
             <div class="container sobremesas">
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="sobremesa" class="card">
                     <img src="assets/sobremesas/sobremesa1.png" alt="sobremesa">
                     <h4>Pudim</h4>
                     <p class="descricao">Tradicional pudim de leite condensado, cremoso e coberto com calda de caramelo.
                     </p>
                     <span class="preco">R$ 9,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="sobremesa" class="card">
                     <img src="assets/sobremesas/sobremesa2.png" alt="sobremesa">
                     <h4>Brownie</h4>
                     <p class="descricao">Brownie de chocolate com casquinha crocante por fora e interior macio e
                         intenso.</p>
                     <span class="preco">R$ 11,90</span>
                 </div>
-                <div data-aos="fade-up" class="card">
+                <div data-categoria="sobremesa" class="card">
                     <img src="assets/sobremesas/sobremesa3.png" alt="sobremesa">
                     <h4>Petit Gateau</h4>
                     <p class="descricao">Bolinho de chocolate com recheio cremoso, servido com uma deliciosa bola de
@@ -284,7 +284,7 @@
                     <p>Cep: 07130270</p>
                 </div>
 
-                <div class="menu-rodape">
+                <div id="contato" class="menu-rodape">
                     <a href="#">
                     <img src="assets/burguer-title.png" alt="burguer">
                     </a>
